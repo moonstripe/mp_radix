@@ -1,0 +1,5 @@
+# Schema for the configuration files of the mp_radix theme.
+
+mp_radix.settings:
+  type: theme_settings
+  label: 'mp_radix settings'

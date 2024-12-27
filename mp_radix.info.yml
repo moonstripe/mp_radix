@@ -1,0 +1,38 @@
+name: mp_radix
+description: ''
+screenshot: screenshot.png
+'alt text': 'mp_radix theme screenshot'
+core_version_requirement: ^10
+version: 1.0.0
+engine: twig
+type: theme
+'base theme': radix
+starterkit: true
+dependencies:
+  - 'drupal:serialization'
+'interface translation project': mp_radix
+'interface translation server pattern': themes/custom/mp_radix/translations/%language.po
+regions:
+  navbar_branding: 'Navbar branding'
+  navbar_left: 'Navbar left'
+  navbar_right: 'Navbar right'
+  header: Header
+  content: Content
+  page_bottom: 'Page bottom'
+  footer: Footer
+libraries:
+  - mp_radix/style
+ckeditor5-stylesheets:
+  - build/css/main.style.css
+libraries-extend:
+  core/drupal.ajax:
+    - mp_radix/drupal.ajax
+  core/drupal.checkbox:
+    - mp_radix/drupal.checkbox
+  core/drupal.message:
+    - mp_radix/drupal.message
+  core/drupal.progress:
+    - mp_radix/drupal.progress
+  clientside_validation_jquery/cv.jquery.validate:
+    - mp_radix/jquery.validate
+generator: 'radix_starterkit:1.0.0'
